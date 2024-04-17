@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { THEME_COLOR } from "../../constant/color.constant";
 import { HUMBURGER_INDEX } from "../../constant/zIndex.constant";
-import {
-  Menu,
-  MenuHandler,
-  MenuItem,
-  MenuList,
-} from "@material-tailwind/react";
+import {  Menu, MenuHandler, MenuItem, MenuList, } from "@material-tailwind/react";
 import { TopicHeadings } from "../../constant/details.project";
 
 const Navbar = () => {
@@ -30,7 +25,7 @@ const Navbar = () => {
       </div>
 
       {/* large screen */}
-      <div className="py-5 hidden lg:flex items-center gap-10 text-gray-700 cursor-pointer font-barlow-semi-condensed">
+      <div className="hidden lg:flex items-center gap-10 text-gray-700 cursor-pointer font-barlow-semi-condensed">
         <a href={"#about"} className="hover:text-blue-500 transition-all">
           Author
         </a>
@@ -57,7 +52,6 @@ const Navbar = () => {
         <button className="border border-indigo-500 rounded-xl px-3 py-1.5 filter-blur hover:bg-indigo-500 hover:text-white transition-all hover:shadow-lg">
           Download PDF
         </button>
-        {/* <ThemeSwitch /> */}
       </div>
 
       {/* mobile screen */}
@@ -148,6 +142,7 @@ const Navbar = () => {
           </aside>
         </div>
       </div>
+      
     </div>
   );
 };
