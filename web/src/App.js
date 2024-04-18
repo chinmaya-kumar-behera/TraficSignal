@@ -7,6 +7,7 @@ import Abstract from "./views/abstract";
 import Navbar from "./views/header";
 import SideBar from "./views/sidebar";
 import { Acknowledgement, Certificate, Declaration } from "./views";
+import Trafficlight from "./views/trafficlight_signal/Trafficlight";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
               <Abstract id={"abstract"} />
               <Introduction id={"introduction"} />
+              <Trafficlight id={'traffic-lights'} />
             </div>
 
             <div className="min-w-[200px]">
