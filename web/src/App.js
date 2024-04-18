@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "./redux/auth/authSlice";
 import { DashBoard, Login, PageNotFound, ProjectPage, SignUp } from "./pages";
 import { Route, Routes } from "react-router-dom";
-import AbsoluteComponent from "./views/absoluteComponent/AbsoluteComponent";
 
 function App() {
   const dispatch = useDispatch();
@@ -17,7 +16,6 @@ function App() {
 
   return (
     <main>
-      <AbsoluteComponent/>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={user?._id ? <ProjectPage /> : <Login />} />

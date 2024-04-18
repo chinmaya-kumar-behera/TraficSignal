@@ -7,3 +7,4 @@ export { default as Paragraph } from "./Paragraph";
 export { default as Lists } from "./Lists";
 export { default as Image } from "./Image";
 export { default as Heading } from "./Heading";
+export { default as AutoSlider } from "./AutoSlider";

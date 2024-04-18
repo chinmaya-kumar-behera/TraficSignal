@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { PageContainer, ScrollIndicator } from '../components/shared';
+import { AutoSlider, PageContainer, ScrollIndicator } from '../components/shared';
 import Navbar from '../views/header';
 import SideBar from '../views/sidebar';
 import Abstract from '../views/abstract';
@@ -28,9 +28,17 @@ import Declaration from '../views/declaration';
 import Acknowledgement from '../views/acknowledgement/Acknowledgement';
 import ReducingTraffic from '../views/reducingTraffic';
 
+import img1 from "../assets/images/Image2.jpeg"
+import img2 from "../assets/images/Image3.jpeg";
+import img3 from "../assets/images/Image4.jpeg";
+import img4 from "../assets/images/Image5.jpeg";
+import img5 from "../assets/images/Image6.jpeg";
+import img6 from "../assets/images/Image7.jpeg";
+import AbsoluteComponent from '../views/absoluteComponent/AbsoluteComponent';
+
 const ProjectContents = () => {
   return (
-    <div className="px-0 lg:px-10">
+    <div className="px-0 lg:px-5">
       <Intro id={"intro"} />
       <Certificate id={"certificate"} />
       <Declaration id={"declaration"} />
@@ -61,21 +69,23 @@ const ProjectContents = () => {
 }
 
 const RightSection = () => {
+  const photos = [img1, img2, img3, img4, img5, img6];
   return (
     <div className="hidden lg:block min-w-[200px]">
-      <div className="bg-gray-200 h-[100px] p-3">
-        hello sir i am chinmaya kumar behera
+      <div className="space-y-3">
+        <h4 className='text-center font-semibold'>Project Lighlights</h4>
+        <AutoSlider data={photos} />
       </div>
     </div>
   );
 }
-
 
 const ProjectPage = () => {
   const [sidebar, setSideBar] = useState(false);
   return (
     <div>
       <ScrollIndicator />
+      <AbsoluteComponent/>
       <Navbar />
       <div className="">
         <PageContainer>
@@ -83,7 +93,9 @@ const ProjectPage = () => {
             <aside className="hidden lg:block">
               <SideBar />
             </aside>
-            {sidebar && <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900"/>}
+            {sidebar && (
+              <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900" />
+            )}
             {/* <aside className="">
                 <SideBar />
               </aside> */}
