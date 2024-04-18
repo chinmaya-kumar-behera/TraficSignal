@@ -26,7 +26,8 @@ import Intro from '../views/Intro';
 import Certificate from '../views/certificate';
 import Declaration from '../views/declaration';
 import Acknowledgement from '../views/acknowledgement/Acknowledgement';
-import ReducingTrafficCongestion from '../views/reducingtrafficcongestion/ReducingTrafficCongestion';
+import ReducingTraffic from '../views/reducingTraffic';
+
 const ProjectContents = () => {
   return (
     <div className="px-0 lg:px-10">
@@ -34,7 +35,6 @@ const ProjectContents = () => {
       <Certificate id={"certificate"} />
       <Declaration id={"declaration"} />
       <Acknowledgement id={"acknowledgement"} />
-
       <Abstract id={"abstract"} />
       <Introduction id={"introduction"} />
       <Trafficlight id={"traffic-lights"} />
@@ -52,7 +52,7 @@ const ProjectContents = () => {
       <AdaptiveControlSystem id={"adaptive-traffic-control-system"} />
       <AutomatedVehicle id={"automated-vehicles"} />
       <IntelligentParking id={"intelligent-parking-planning"} />
-      <ReducingTrafficCongestion id={"reducing-traffic-congestion"} />
+      <ReducingTraffic id={"reducing-traffic-congestion"}/>
       <SafetyEmergency id={"safety-and-emergency-situations"} />
       <TransitPlanning id={"tpits"} />
       <UrbanPlanning id={"up"} />
@@ -72,7 +72,7 @@ const RightSection = () => {
 
 
 const ProjectPage = () => {
-  const [sidebar, setSideBar] = useState(true);
+  const [sidebar, setSideBar] = useState(false);
   return (
     <div>
       <ScrollIndicator />
@@ -83,11 +83,10 @@ const ProjectPage = () => {
             <aside className="hidden lg:block">
               <SideBar />
             </aside>
-            <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900">
-              {/* <aside className="">
+            {sidebar && <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900"/>}
+            {/* <aside className="">
                 <SideBar />
               </aside> */}
-            </div>
             <ProjectContents />
             <RightSection />
           </section>

@@ -1,14 +1,12 @@
-import React from "react";
-import { Image, Paragraph, SectionContainer } from "../../components/shared";
+import React from 'react'
+import { Image, Paragraph, SectionContainer } from '../../components/shared';
 import ReduceCongestion from "../../assets/images/Image10.jpeg";
 
-
-
-const ReducingTrafficCongestion = ({ id }) => {
+const ReducingTraffic = ({ id }) => {
     return (
-      <SectionContainer
+    <SectionContainer
         id={id}
-        heading=" Reducing Traffic Congestions– Improving Road Traffic Flow. "
+        heading="Reducing Traffic Congestions– Improving Road Traffic Flow. "
       >
         <Paragraph>
           Artificial intelligence can reduce traffic congestion by routing cars
@@ -65,7 +63,7 @@ const ReducingTrafficCongestion = ({ id }) => {
           of the situation
         </Paragraph>
       </SectionContainer>
-    );
-  };
-  
-  export default ReducingTrafficCongestion;
+  )
+}
+
+export default ReducingTraffic
