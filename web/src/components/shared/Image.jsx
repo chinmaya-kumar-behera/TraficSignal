@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Image = ({ image, className }) => {
+const Image = ({ image, className, alt }) => {
     return (
       <div className={className}>
         <img
           className="w-full h-full object-cover object-center"
           src={image}
-          alt="hello_Image"
+          alt={alt}
         />
       </div>
     );
