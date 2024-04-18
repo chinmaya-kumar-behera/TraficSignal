@@ -26,8 +26,7 @@ import Intro from '../views/Intro';
 import Certificate from '../views/certificate';
 import Declaration from '../views/declaration';
 import Acknowledgement from '../views/acknowledgement/Acknowledgement';
-import ReducingTrafficCongestion from '../views/reducingTrafficCongestion';
-
+import ReducingTrafficCongestion from '../views/reducingtrafficcongestion/ReducingTrafficCongestion';
 const ProjectContents = () => {
   return (
     <div className="px-0 lg:px-10">
