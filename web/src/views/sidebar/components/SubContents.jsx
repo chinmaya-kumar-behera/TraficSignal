@@ -1,20 +1,23 @@
 import React, { useEffect, useState } from 'react'
 
-const SubContents = ({ data }) => {
+const SubContents = ({ data, mobileView = false, onClickedItem }) => {
   const [hash, setHash] = useState(null);
-  // const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-      window.addEventListener("hashchange", function () {
-        setHash(window.location.hash);
-      });
-    }, [hash]);
-  
+  useEffect(() => {
+    window.addEventListener("hashchange", function () {
+      setHash(window.location.hash);
+    });
+  }, [hash]);
+
+  const onClickHandler = () => {
+    if (mobileView) onClickedItem();
+  };
+
   return (
     <div className="mt-4">
-      <ul className='flex flex-col gap-1'>
+      <ul className="flex flex-col gap-1">
         {data.map((topic) => (
-          <a key={topic.id} href={`#${topic.id}`}>
+          <a key={topic.id} href={`#${topic.id}`} onClick={onClickHandler}>
             <li
               className="outline-none bg-blue-100 hover:bg-blue-100 hover:bg-opacity-60 text-xs rounded"
               title={topic.name}

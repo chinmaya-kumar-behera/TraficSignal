@@ -71,7 +71,7 @@ const ProjectContents = () => {
 const RightSection = () => {
   const photos = [img1, img2, img3, img4, img5, img6];
   return (
-    <div className="hidden lg:block min-w-[200px]">
+    <div className="hidden lg:block max-w-[200px] ">
       <div className="space-y-3">
         <h4 className='text-center font-semibold'>Project Lighlights</h4>
         <AutoSlider data={photos} />
@@ -81,24 +81,18 @@ const RightSection = () => {
 }
 
 const ProjectPage = () => {
-  const [sidebar, setSideBar] = useState(false);
   return (
-    <div>
+    <div className="max-w-[100vw]">
       <ScrollIndicator />
-      <AbsoluteComponent/>
+      <AbsoluteComponent />
       <Navbar />
-      <div className="">
+
+      <div>
         <PageContainer>
           <section className="flex gap-2 py-2">
             <aside className="hidden lg:block">
               <SideBar />
             </aside>
-            {sidebar && (
-              <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900" />
-            )}
-            {/* <aside className="">
-                <SideBar />
-              </aside> */}
             <ProjectContents />
             <RightSection />
           </section>
