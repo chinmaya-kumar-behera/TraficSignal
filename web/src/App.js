@@ -16,6 +16,19 @@ import SmartParking from "./views/smartparking/SmartParking";
 import LawEnforcement from "./views/lawenforcement/LawEnforcement";
 import BenefitsAI from "./views/benefitsai/BenefitsAI";
 import Its from "./views/its/Its";
+import QualityData from "./views/qualitydata/QualityData";
+import AiTrafficManagement from "./views/aitrafficmanagement/AiTrafficManagement";
+import ChallengesOfUsingAi from "./views/challengesofusingai/ChallengesOfUsingAi";
+import CyberSecurityIssues from "./views/cybersecurityissues/CyberSecurityIssues";
+import EthicalConsiderations from "./views/ethicalconsiderations/EthicalConsiderations";
+import TheSmartCity from "./views/thesmartcity/TheSmartCity";
+import AdaptiveControlSystem from "./views/adaptivecontrolsystem/AdaptiveControlSystem";
+import AutomatedVehicle from "./views/automatedvehicle/AutomatedVehicle";
+import IntelligentParking from "./views/intelligentparking/IntelligentParking";
+import ReducingTrafficCongestion from "./views/ReducingTrafficCongestion/ReducingTrafficCongestion";
+import SafetyEmergency from "./views/safetyemergency/SafetyEmergency";
+import TransitPlanning from "./views/transitplanning/TransitPlanning";
+import UrbanPlanning from "./views/urbanplanning/UrbanPlanning";
 
 
 function App() {
@@ -52,6 +65,20 @@ function App() {
                        <LawEnforcement id={'law-enfourcement'}/>
                        <Its id={'itms'}/>
                        <BenefitsAI id={'benefits-aitm'}/>
+                       <QualityData id={'quality-data'}/>
+                       <AiTrafficManagement id={'ai-in-traffic-management'}/>
+                       <ChallengesOfUsingAi id={'challenges-of-using-ai-tm'}/>
+                       <CyberSecurityIssues id={'cyber-security-issues'}/>
+                       <EthicalConsiderations id={'ethical-considerations'}/>
+                       <TheSmartCity id={'smart-city-ai'}/>
+                       <AdaptiveControlSystem id={'adaptive-traffic-control-system'}/>
+                       <AutomatedVehicle id={'automated-vehicles'}/>
+                       <IntelligentParking id={'intelligent-parking-planning'}/>
+                       <ReducingTrafficCongestion id={'reducing-traffic-congestion'}/>
+                       <SafetyEmergency id={'safety-and-emergency-situations'}/>
+                       <TransitPlanning id={'tpits'}/>
+                       <UrbanPlanning id={'up'}/>
+
                     </div>
 
                     <div className="min-w-[200px]">

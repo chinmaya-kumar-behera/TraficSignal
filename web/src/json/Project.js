@@ -110,7 +110,7 @@ export const ProjectTopics = [
       {
         key: 14,
         name: "Adaptive traffic control system(ATCS) ",
-        id: "adaptive-traaffic-control-system",
+        id: "adaptive-traffic-control-system",
         hasSubTopics: false,
       },
       {

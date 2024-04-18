@@ -1,5 +1,6 @@
 import React from "react";
-import {Lists,Heading, Paragraph, SectionContainer } from "../../components/shared";
+import {Image,Lists,Heading, Paragraph, SectionContainer } from "../../components/shared";
+import Benefitsai from "../../assets/images/Image3.jpeg"
 
 const BenefitsAI = ({ id }) => {
     const ListData = [
@@ -44,6 +45,7 @@ const BenefitsAI = ({ id }) => {
                 transportation managers to leverage existing systems to create new opportunities for levels. ridership and service</Paragraph>
 
 
+                <Image image={Benefitsai} alt={"traffic_image"}  className={'h-[400px]'}/>
 
 
         </SectionContainer>
