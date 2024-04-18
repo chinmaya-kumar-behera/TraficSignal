@@ -18,6 +18,21 @@ import BenefitsAI from "./views/benefitsai/BenefitsAI";
 import Its from "./views/its/Its";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "./redux/auth/authSlice";
+import UrbanPlanning from "./views/urbanplanning/UrbanPlanning";
+import QualityData from "./views/qualitydata/QualityData";
+import AiTrafficManagement from "./views/aitrafficmanagement/AiTrafficManagement";
+import ChallengesOfUsingAi from "./views/challengesofusingai/ChallengesOfUsingAi";
+import CyberSecurityIssues from "./views/cybersecurityissues/CyberSecurityIssues";
+import EthicalConsiderations from "./views/ethicalconsiderations/EthicalConsiderations";
+import TheSmartCity from "./views/thesmartcity/TheSmartCity";
+import AdaptiveControlSystem from "./views/adaptivecontrolsystem/AdaptiveControlSystem";
+import AutomatedVehicle from "./views/automatedvehicle/AutomatedVehicle";
+import IntelligentParking from "./views/intelligentparking/IntelligentParking";
+import ReducingTrafficCongestion from "./views/reducingtrafficcongestion/ReducingTrafficCongestion";
+import SafetyEmergency from "./views/safetyemergency/SafetyEmergency";
+import TransitPlanning from "./views/transitplanning/TransitPlanning";
+
+
 
 function App() {
     const dispatch = useDispatch();
