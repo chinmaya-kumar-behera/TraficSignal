@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PageContainer, ScrollIndicator } from '../components/shared';
 import Navbar from '../views/header';
 import SideBar from '../views/sidebar';
@@ -73,20 +73,28 @@ const RightSection = () => {
 
 
 const ProjectPage = () => {
+  const [sidebar, setSideBar] = useState(true);
   return (
-    <React.Fragment>
+    <div>
       <ScrollIndicator />
       <Navbar />
       <div className="">
         <PageContainer>
-          <section className="flex gap-2 py-2 relative">
-            <SideBar />
+          <section className="flex gap-2 py-2">
+            <aside className="hidden lg:block">
+              <SideBar />
+            </aside>
+            <div className="absolute top-0 left-0 w-[100vw] h-[100vh] bg-gray-900">
+              {/* <aside className="">
+                <SideBar />
+              </aside> */}
+            </div>
             <ProjectContents />
-            <RightSection/>
+            <RightSection />
           </section>
         </PageContainer>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 
