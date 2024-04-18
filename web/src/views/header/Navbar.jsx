@@ -20,8 +20,8 @@ const ProfileIconsDetails = ({ user }) => {
             <div className="flex items-center justify-center bg-white  rounded-full">
               <FaUserCircle className="text-4xl" />
             </div>
-            <div className="flex flex-col truncate max-w-[150px]">
-              <span className="text-xs font-semibold">{user?.name}</span>
+            <div className="flex flex-col truncate max-w-[150px] text-gray-700 font-semibold">
+              <span className="text-xs font-bold">{user?.name}</span>
               <span className="text-xs w-full truncate">
                 {user?.email}
               </span>
@@ -56,7 +56,7 @@ const Navbar = () => {
   const { logoutHandler } = UserHandler();
 
   return (
-    <nav className="bg-indigo-300 z-10 sticky top-0 px-2">
+    <nav className="bg-indigo-300 z-20 sticky top-0 px-2 ">
       <PageContainer>
         <div className="h-[50px] flex items-center justify-between">
           <div className="">hello</div>

@@ -86,12 +86,13 @@ const DashBoard = () => {
               </div> */}
 
               <div class="max-w-xl bg-white border border-gray-200 rounded-xl shadow overflow-hidden">
-                <img
-                  className="max-h-[150px] lg:max-h-[200px] w-full object-cover object-center"
-                  class="rounded-t-lg"
-                  src={cardImage}
-                  alt=""
-                />
+                <div className="h-[200px] w-full">
+                  <img
+                    className="h-full w-full object-cover object-center"
+                    src={cardImage}
+                    alt=""
+                  />
+                </div>
                 <div class="p-5">
                   <h5 class="mb-2 text-lg lg:text-2xl font-bold tracking-tight text-gray-900">
                     Intelligent Traffic Control System using Artificial
