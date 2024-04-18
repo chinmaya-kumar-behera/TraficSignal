@@ -10,6 +10,8 @@ import { Acknowledgement, Certificate, Declaration } from "./views";
 import Trafficlight from "./views/trafficlight_signal/Trafficlight";
 import AutomaticDistanceRecognition from "./views/automaticdistance_recognition/AutomaticDistanceRecognition";
 import SmartParking from "./views/smartparking/SmartParking";
+import LawEnforcement from "./views/lawenforcement/LawEnforcement";
+import Its from "./views/its/Its";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
               <Trafficlight id={'traffic-lights'} />
               <AutomaticDistanceRecognition id={'automatic-distance-recognition'} />
               <SmartParking id={'smart-parking'}/>
+              <LawEnforcement id={'law-enfourcement'}/>
+              <Its id={'itms'}/>
             </div>
 
             <div className="min-w-[200px]">
