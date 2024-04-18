@@ -1,5 +1,5 @@
 import React from "react";
-import {Lists, Paragraph, SectionContainer } from "../../components/shared";
+import {Lists,Heading, Paragraph, SectionContainer } from "../../components/shared";
 
 const BenefitsAI = ({ id }) => {
     const ListData = [
