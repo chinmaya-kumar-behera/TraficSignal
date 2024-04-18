@@ -5,3 +5,5 @@ export { default as ScrollIndicator } from "./ScrollIndicator";
 export { default as SectionContainer } from "./SectionContainer";
 export { default as Paragraph } from "./Paragraph";
 export { default as Lists } from "./Lists";
+export { default as Image } from "./Image";
+export { default as Heading } from "./Heading";
