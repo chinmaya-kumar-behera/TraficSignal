@@ -105,7 +105,6 @@ const UserHandler = () => {
   //logout handler
 
   const logoutHandler = () => {
-    console.log("logout handler called")
     localStorage.removeItem('user');
     dispatch(setUser(null));
   }

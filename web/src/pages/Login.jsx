@@ -1,6 +1,6 @@
 import React from "react";
-import UserHandler from "../../handlers/UserHandler";
-import Loader from "../../components/UI/Loader";
+import UserHandler from "../handlers/UserHandler";
+import Loader from "../components/UI/Loader";
 
 const Login = () => {
   const { onLogInFormSubmit, onLoginChange, loginData } = UserHandler();

@@ -16,9 +16,9 @@ const Contents = ({ data }) => {
         {data.map((topic) => {
           if (topic.hasSubTopics) {
             return (
-              <div key={topic.id} className="mt-2 space-y-2 text-xs p-2">
-                <span className="font-bold">{topic.name}</span>
-                <div className="pl-2">
+              <div key={topic.id} className="mt-2 space-y-2 text-xs">
+                <span className="font-bold p-2">{topic.name}</span>
+                <div className="">
                   <Contents data={topic.subTopics} />
                 </div>
               </div>

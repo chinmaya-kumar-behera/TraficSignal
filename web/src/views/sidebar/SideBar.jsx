@@ -21,7 +21,7 @@ const SideBar = () => {
                 <input
                   type="text"
                   id="voice-search"
-                  class="bg-gray-50 border rounded-lg border-gray-300 text-gray-900 text-sm block w-full ps-10 p-2 outline-none shadow-lg "
+                  class="bg-gray-50 border rounded-lg border-gray-300 text-gray-900 text-sm block w-full ps-10 p-2 outline-none shadow-sm "
                   placeholder="Quick Search"
                   required
                 />
@@ -32,7 +32,7 @@ const SideBar = () => {
           {/* contents section */}
 
           <div className="space-y-2">
-            <h3 className="text-center font-semibold text-blue-500">
+            <h3 className="font-semibold p-2" >
               Project Contents
             </h3>
             <Contents data={ProjectTopics} />
