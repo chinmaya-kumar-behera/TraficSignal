@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Intro from "./views/Intro";
 import Introduction from "./views/introduction";
 import { PageContainer, ScrollIndicator } from "./components/shared";
@@ -16,22 +16,20 @@ import SmartParking from "./views/smartparking/SmartParking";
 import LawEnforcement from "./views/lawenforcement/LawEnforcement";
 import BenefitsAI from "./views/benefitsai/BenefitsAI";
 import Its from "./views/its/Its";
-import QualityData from "./views/qualitydata/QualityData";
-import AiTrafficManagement from "./views/aitrafficmanagement/AiTrafficManagement";
-import ChallengesOfUsingAi from "./views/challengesofusingai/ChallengesOfUsingAi";
-import CyberSecurityIssues from "./views/cybersecurityissues/CyberSecurityIssues";
-import EthicalConsiderations from "./views/ethicalconsiderations/EthicalConsiderations";
-import TheSmartCity from "./views/thesmartcity/TheSmartCity";
-import AdaptiveControlSystem from "./views/adaptivecontrolsystem/AdaptiveControlSystem";
-import AutomatedVehicle from "./views/automatedvehicle/AutomatedVehicle";
-import IntelligentParking from "./views/intelligentparking/IntelligentParking";
-import ReducingTrafficCongestion from "./views/ReducingTrafficCongestion/ReducingTrafficCongestion";
-import SafetyEmergency from "./views/safetyemergency/SafetyEmergency";
-import TransitPlanning from "./views/transitplanning/TransitPlanning";
-import UrbanPlanning from "./views/urbanplanning/UrbanPlanning";
-
+import { useDispatch, useSelector } from "react-redux";
+import { setUser } from "./redux/auth/authSlice";
 
 function App() {
+    const dispatch = useDispatch();
+    const user = useSelector((state) => state.auth.user);
+
+    useEffect(() => {
+      const storageData = JSON.parse(localStorage.getItem("user"));
+      dispatch(setUser(storageData));
+    }, [user?._id]);
+  
+   console.log(user);
+
   return (
     <main>
       <Routes>
@@ -44,9 +42,9 @@ function App() {
               <ScrollIndicator />
               <Navbar />
 
-              <div className="w-full">
+              <div className="">
                 <PageContainer>
-                  <section className="flex gap-2 py-2">
+                  <section className="flex gap-2 py-2 relative">
                     <SideBar />
 
                     <div className="p-10">

@@ -9,7 +9,7 @@ const SideBar = () => {
       <div className="fixed w-[250px] h-[calc(100vh-60px)] top-30 border-r-2 pr-7 overflow-y-scroll no-scrollbar">
         <div className="w-full h-full py-3 space-y-3">
           {/* search input   */}
-          <div className="sticky top-3">
+          <div className="sticky top-0">
             <form class="flex items-center max-w-lg mx-auto">
               <label for="voice-search" class="sr-only">
                 Search
