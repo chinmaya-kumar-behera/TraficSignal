@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useDebugValue, useEffect } from "react";
 import { CiSearch } from "react-icons/ci";
 import { ProjectTopics } from "../../json/Project";
 import Contents from "./components/Contents";
+import useDebounce from "../../hooks/useDebounce";
 
 const SideBar = () => {
+
   return (
     <div className="min-w-[250px]">
       <div className="fixed w-[250px] h-[calc(100vh-60px)] top-30 border-r-2 pr-7 overflow-y-scroll no-scrollbar">

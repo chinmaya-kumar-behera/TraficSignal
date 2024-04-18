@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import useDebounce from '../../../hooks/useDebounce';
 
 
 const Contents = ({ data }) => {
   const [hash, setHash] = useState(null);
+  
+  useEffect(() => {
+    console.log("use effect called")
+  })
   
   useEffect(() => {
     window.addEventListener("hashchange", function () {

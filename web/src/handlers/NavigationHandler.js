@@ -24,11 +24,8 @@ const NavigationHandler = () => {
   }
 
   const navigateToDashBoard = () => {
-    navigate("/project");
+    navigate("/dashboard");
   }
-  //  const navigateToDashBoard = () => {
-  //    navigate("/project");
-  //  };
 
   return {
     navigateToNewUrl,

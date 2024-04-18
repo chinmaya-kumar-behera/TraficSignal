@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "./redux/auth/authSlice";
-import { Login, PageNotFound, ProjectPage, SignUp } from "./pages";
+import { DashBoard, Login, PageNotFound, ProjectPage, SignUp } from "./pages";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={user?._id ? <ProjectPage /> : <Login />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/project" element={user?._id ? <ProjectPage /> : <Login />} />
+        <Route path="/dashboard" element={<DashBoard />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </main>

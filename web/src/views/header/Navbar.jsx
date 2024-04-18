@@ -4,10 +4,14 @@ import { useSelector } from 'react-redux';
 import { FaUserCircle } from "react-icons/fa";
 import { AiOutlineLogout } from "react-icons/ai";
 import { Menu, MenuHandler, MenuList, MenuItem } from "@material-tailwind/react";
-import NavigationHandler from '../../handlers/NavigationHandler';
 import UserHandler from '../../handlers/UserHandler';
+import NavigationHandler from '../../handlers/NavigationHandler';
+import { MdOutlineEventNote } from "react-icons/md";
 
 const ProfileIconsDetails = ({ user }) => {
+  const { navigateToDashBoard } = NavigationHandler();
+  const { logoutHandler } = UserHandler();
+
   return (
     <Menu>
       <MenuHandler>
@@ -19,16 +23,29 @@ const ProfileIconsDetails = ({ user }) => {
             <div className="flex flex-col truncate max-w-[150px]">
               <span className="text-xs font-semibold">{user?.name}</span>
               <span className="text-xs w-full truncate">
-                {user?.email} hellosrij EHGOAH ohl
+                {user?.email}
               </span>
             </div>
           </div>
         </div>
       </MenuHandler>
-      <MenuList className="p-0 m-0 w-[200px] mt-3" placement="bottom-end">
-        <a href="dashboard">
-          <MenuItem className="px-4 py-2">Profile</MenuItem>
-        </a>
+      <MenuList
+        className="p-2 m-0 w-[200px] mt-3 font-semibold text-gray-700 space-y-2"
+        placement="bottom-end"
+      >
+        <MenuItem
+          className="flex items-center gap-3 px-4 py-2 text-left bg-gray-50 hover:bg-gray-100"
+          onClick={navigateToDashBoard}
+        >
+          <MdOutlineEventNote className="text-xl" /> <span>Dashboard</span>
+        </MenuItem>
+        <MenuItem
+          className="flex items-center gap-3 px-4 py-2 text-left bg-red-500 text-white hover:bg-red-400"
+          onClick={logoutHandler}
+        >
+          <AiOutlineLogout className="text-xl text-white" />
+          <span>Logout</span>
+        </MenuItem>
       </MenuList>
     </Menu>
   );
@@ -45,9 +62,9 @@ const Navbar = () => {
           <div className="">hello</div>
           <div className="">
             {user?._id ? (
-              <div className="flex items-center gap-3" title="logout">
+              <div className="flex items-center gap-3">
                 <ProfileIconsDetails user={user} />
-                <div className="flex" onClick={logoutHandler}>
+                <div className="flex" onClick={logoutHandler} title='logout'>
                   <button className="p-1.5 bg-gray-200 bg-opacity-50 hover:bg-opacity-70 rounded-full group">
                     <AiOutlineLogout className="text-xl text-red-500 group-hover:text-red-400" />
                   </button>
