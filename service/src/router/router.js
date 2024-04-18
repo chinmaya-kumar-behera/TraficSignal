@@ -1,7 +1,6 @@
 const express = require("express");
 const { signUp, login } = require("../controller/userController");
 
-
 const AppRouter = express.Router();
 
 AppRouter.get('/', (req, res) => {
