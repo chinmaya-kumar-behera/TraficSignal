@@ -11,7 +11,7 @@ const Trafficlight = ({ id }) => {
     "Compared to a manual system, it provides a lot of efficiency and productivity"
   ];
   return (
-    <SectionContainer id={id} heading="INTRODUCTION">
+    <SectionContainer id={id} heading="Traffic Light">
       <Paragraph>
       Traffic lights are an important part of the transportation infrastructure.
  They help to keep traffic flowing and organized.
