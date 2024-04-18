@@ -12,6 +12,11 @@ import AutomaticDistanceRecognition from "./views/automaticdistance_recognition/
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signup";
+import SmartParking from "./views/smartparking/SmartParking";
+import LawEnforcement from "./views/lawenforcement/LawEnforcement";
+import BenefitsAI from "./views/benefitsai/BenefitsAI";
+import Its from "./views/its/Its";
+
 
 function App() {
   return (
@@ -43,6 +48,10 @@ function App() {
                       <AutomaticDistanceRecognition
                         id={"automatic-distance-recognition"}
                       />
+                       <SmartParking id={'smart-parking'}/>
+                       <LawEnforcement id={'law-enfourcement'}/>
+                       <Its id={'itms'}/>
+                       <BenefitsAI id={'benefits-aitm'}/>
                     </div>
 
                     <div className="min-w-[200px]">
