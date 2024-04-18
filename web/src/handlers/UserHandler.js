@@ -9,7 +9,7 @@ import NavigationHandler from "./NavigationHandler";
 const UserHandler = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
-  const { navigateToCodes } = NavigationHandler();
+  const { navigateToDashBoard } = NavigationHandler();
 
   // signup handlers
   const [signUpData, setSignUpData] = useState({
@@ -91,7 +91,7 @@ const UserHandler = () => {
         dispatch(setUser(userData));
         toast.success(message);
         resetLoginData();
-        navigateToCodes();
+        navigateToDashBoard();
       }
       setLoginData((prev) => ({ ...prev, loading: false }));
     } catch (err) {

@@ -33,8 +33,9 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<SignUp/>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
         <Route
           path="/project"
           element={
@@ -59,10 +60,10 @@ function App() {
                       <AutomaticDistanceRecognition
                         id={"automatic-distance-recognition"}
                       />
-                       <SmartParking id={'smart-parking'}/>
-                       <LawEnforcement id={'law-enfourcement'}/>
-                       <Its id={'itms'}/>
-                       <BenefitsAI id={'benefits-aitm'}/>
+                      <SmartParking id={"smart-parking"} />
+                      <LawEnforcement id={"law-enfourcement"} />
+                      <Its id={"itms"} />
+                      <BenefitsAI id={"benefits-aitm"} />
                     </div>
 
                     <div className="min-w-[200px]">

@@ -23,7 +23,17 @@ const NavigationHandler = () => {
     navigate('/codes');
   }
 
-  return { navigateToNewUrl, generateRandomString, navigateToCodes };
+  const navigateToDashBoard = () => {
+    navigate("/project");
+    
+  }
+
+  return {
+    navigateToNewUrl,
+    generateRandomString,
+    navigateToCodes,
+    navigateToDashBoard,
+  };
 };
 
 export default NavigationHandler;
