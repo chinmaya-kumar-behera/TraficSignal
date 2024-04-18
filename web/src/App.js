@@ -9,6 +9,7 @@ import SideBar from "./views/sidebar";
 import { Acknowledgement, Certificate, Declaration } from "./views";
 import Trafficlight from "./views/trafficlight_signal/Trafficlight";
 import AutomaticDistanceRecognition from "./views/automaticdistance_recognition/AutomaticDistanceRecognition";
+import SmartParking from "./views/smartparking/SmartParking";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
               <Introduction id={"introduction"} />
               <Trafficlight id={'traffic-lights'} />
               <AutomaticDistanceRecognition id={'automatic-distance-recognition'} />
+              <SmartParking id={'smart-parking'}/>
             </div>
 
             <div className="min-w-[200px]">
