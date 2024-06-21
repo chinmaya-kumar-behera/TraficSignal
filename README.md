@@ -2,6 +2,10 @@
 
 This website is designed to showcase college projects in an organized manner. It features user authentication, allowing users to log in and view a dashboard with available projects. Users can select a particular project card to view detailed information about the project.
 
+## Visit the Site
+
+Explore the College Projects Display Website at [college-projects](https://traffic-signal-dlbulpgav-chinmayas-projects-e36965c6.vercel.app/).
+
 ## Features
 
 ### User Authentication
@@ -28,9 +32,4 @@ This website is designed to showcase college projects in an organized manner. It
 ![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/3a7e5e58-66a8-47b9-ada3-2b6285e5adc8)
 ![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/f900bc2e-0f72-43b9-ac4e-6db2b02034e8)
 ![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/9413ca0a-e0db-47c2-8b31-062b57ec9485)
-
-## Visit the Site
-
-Explore the College Projects Display Website at [college-projects](https://traffic-signal-dlbulpgav-chinmayas-projects-e36965c6.vercel.app/).
-
 
