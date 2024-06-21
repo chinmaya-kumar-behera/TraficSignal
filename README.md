@@ -25,9 +25,9 @@ This website is designed to showcase college projects in an organized manner. It
 
 ## Screenshots
 
-![Login Page](path/to/login_page_screenshot.png)
-![Dashboard](path/to/dashboard_screenshot.png)
-![Project Details](path/to/project_details_screenshot.png)
+![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/3a7e5e58-66a8-47b9-ada3-2b6285e5adc8)
+![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/f900bc2e-0f72-43b9-ac4e-6db2b02034e8)
+![image](https://github.com/chinmaya-kumar-behera/TraficSignal/assets/101429530/9413ca0a-e0db-47c2-8b31-062b57ec9485)
 
 ## Visit the Site
 
